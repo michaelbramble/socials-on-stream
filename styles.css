@@ -2,20 +2,20 @@ body{
   margin: 0;
   background-color: #00FF00;
   font-family: 'Delfino';
-  color: #FFFFFF;
+  color: #A6A6A6;
 }
 
 #container{
-  width: 358px;
-  height: 70px;
-  background-color: #6A6A6A;
+  width: 547px; /* the width and height here are exact    */
+  height: 87px; /* values that work with my twitch layout */
+  background-color: #333333;
 }
 
 #img{
   padding: 10px;
-  width: 50px;
-  height: 50px;
-  background-color: #333333;
+  width: 67px;
+  height: 67px;
+  background-color: #111111;
 }
 
 #text{
@@ -23,5 +23,5 @@ body{
   vertical-align: top;
   margin-top: 6px;
   padding-right: 10px;
-  font-size: 50px;
+  font-size: 67px;
 }

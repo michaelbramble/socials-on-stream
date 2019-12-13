@@ -11,19 +11,19 @@ const static = {
 const socials = [
   {
     name: 'Twitch',
-    id: '/Bramz' // 164px wide
+    id: '/Bramz'
   },
   {
     name: 'Twitter',
-    id: '@__Bramz' // 246px wide
+    id: '@__Bramz'
   },
   {
     name: 'YouTube',
-    id: '/c/BramzYT' // 274px wide
+    id: '/c/BramzYT'
   },
   {
     name: 'Discord',
-    id: '.gg/bramz' // 235px wide
+    id: '.gg/bramz'
   }
 ];
 
@@ -40,7 +40,6 @@ const img = document.getElementById('img');
 
 let i = 0;
 
-// 5 minutes = 300,000 ms
 function changeSocial(){
   text.innerHTML = (`${socials[i].id}`);
   img.setAttribute('src', `${images[i]}`);
@@ -52,7 +51,7 @@ function changeSocial(){
     setTimeout(() => {
       container.style.display = 'block';
       this.changeSocial();
-    }, 8500); // 5 seconds after text clears
+    }, 303500); // 5 minutes after container is gone
   }
   else{
     i++;
