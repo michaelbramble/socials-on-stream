@@ -6,9 +6,21 @@ body{
 }
 
 #container{
+  position: absolute;
+  overflow: hidden;
   width: 547px; /* the width and height here are exact    */
   height: 87px; /* values that work with my twitch layout */
   background-color: #333333;
+}
+
+#container.in{
+  -webkit-animation: slide-in 0.5s forwards;
+  animation: slide-in 0.5s forwards;
+}
+
+#container.out{
+  -webkit-animation: slide-out 0.5s forwards;
+  animation: slide-out 0.5s forwards;
 }
 
 #img{
@@ -24,4 +36,24 @@ body{
   margin-top: 6px;
   padding-right: 10px;
   font-size: 67px;
+}
+
+@-webkit-keyframes slide-in {
+  0% {top: -87px;}
+  100% {top: 0;}
+}
+
+@keyframes slide-in {
+  0% {top: -87px;}
+  100% {top: 0;}
+}
+
+@-webkit-keyframes slide-out {
+  0% {top: 0px;}
+  100% {top: -87px;}
+}
+
+@keyframes slide-out {
+  0% {top: 0px;}
+  100% {top: -87px;}
 }
